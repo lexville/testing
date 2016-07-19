@@ -28,8 +28,8 @@ class ViewUsersPostsTest extends TestCase
 
         factory(Post::class, 5)->create();
 
-        $post = factory(User::class)->make([
-            'post' => 'Hurray my very first post'
+        $post = factory(Post::class)->make([
+            'posts' => 'Hurray my very first post'
         ]);
 
         $user->posts()->save($post);
