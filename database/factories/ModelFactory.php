@@ -16,3 +16,9 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'name' => $faker->name,
     ];
 });
+
+$factory->define(App\User::class, function (Faker\Generator $faker) {
+    return [
+        'post' => $faker->sentence,
+    ];
+});
