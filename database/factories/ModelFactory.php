@@ -17,8 +17,8 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+$factory->define(App\Post::class, function (Faker\Generator $faker) {
     return [
-        'post' => $faker->sentence,
+        'posts' => $faker->sentence,
     ];
 });
